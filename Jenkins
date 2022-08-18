@@ -23,7 +23,7 @@ pipeline{
         }
     }
     post{
-        always{
+      failure{
             emailext body: 'Summary',subject: 'Pipeline Status',to: 'rajeshgunait@gmail.com'
 }
         
